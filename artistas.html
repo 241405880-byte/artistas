@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Artistas Favoritos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-playlist">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">🎵 Mi Playlist</a>
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link active" href="artistas.html">Artistas</a></li>
+                <li class="nav-item"><a class="nav-link" href="canciones.html">Canciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main class="container seccion">
+    <div class="text-center mb-5">
+        <p class="subtitulo">MIS FAVORITOS</p>
+        <h1 class="titulo-pagina fw-bold">Mis Artistas Favoritos</h1>
+        <p>Estos son los tres artistas que forman parte de mi playlist.</p>
+    </div>
+    <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card tarjeta-artista h-100 shadow">
+                <img src="jenny.webp" class="card-img-top"
+                     alt="Jenni Rivera">
+                <div class="card-body text-center">
+                    <span class="badge etiqueta mb-2">Regional mexicano</span>
+                    <h2 class="card-title h4">Jenni Rivera</h2>
+                    <p class="card-text">
+                        Cantante mexicana reconocida por su música
+                        regional mexicana y su gran trayectoria.
+                    </p>
+                    <a href="canciones.html" class="btn btn-playlist">
+                        Ver canciones
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card tarjeta-artista h-100 shadow">
+                <img src="carla.webp" class="card-img-top"
+                     alt="Carla Morrison">
+                <div class="card-body text-center">
+                    <span class="badge etiqueta mb-2">Pop alternativo</span>
+                    <h2 class="card-title h4">Carla Morrison</h2>
+                    <p class="card-text">
+                        Cantautora mexicana conocida por sus canciones
+                        románticas y su estilo emocional.
+                    </p>
+                    <a href="canciones.html" class="btn btn-playlist">
+                        Ver canciones
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card tarjeta-artista h-100 shadow">
+                <img src="junior.jpg" class="card-img-top"
+                     alt="Junior H">
+                <div class="card-body text-center">
+                    <span class="badge etiqueta mb-2">Corridos tumbados</span>
+                    <h2 class="card-title h4">Junior H</h2>
+                    <p class="card-text">
+                        Cantante mexicano reconocido por su participación
+                        en el movimiento de los corridos tumbados.
+                    </p>
+                    <a href="canciones.html" class="btn btn-playlist">
+                        Ver canciones
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <p class="mb-0">Samantha Villa García | Mi Playlist Favorita</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

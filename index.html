@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Playlist Favorita</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-playlist">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">🎵 Mi Playlist</a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="artistas.html">Artistas</a></li>
+                <li class="nav-item"><a class="nav-link" href="canciones.html">Canciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="hero text-center">
+    <div class="container">
+        <span class="badge rounded-pill etiqueta mb-3">MI MÚSICA FAVORITA</span>
+        <h1 class="display-3 fw-bold">Mi Playlist <span>Favorita</span></h1>
+        <p class="lead">La música que me gusta, mis artistas favoritos y canciones especiales.</p>
+        <a href="artistas.html" class="btn btn-playlist btn-lg mt-3">
+            Conocer artistas
+        </a>
+    </div>
+</header>
+
+<section class="container seccion">
+    <div class="text-center mb-4">
+        <p class="subtitulo">DESCUBRE MI MÚSICA</p>
+        <h2 class="fw-bold">Mis artistas favoritos</h2>
+        <p>Desliza las imágenes para conocerlos.</p>
+    </div>
+
+    <div id="carouselPlaylist" class="carousel slide carousel-fade shadow-lg"
+         data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselPlaylist"
+                    data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Jenni Rivera"></button>
+            <button type="button" data-bs-target="#carouselPlaylist"
+                    data-bs-slide-to="1" aria-label="Carla Morrison"></button>
+            <button type="button" data-bs-target="#carouselPlaylist"
+                    data-bs-slide-to="2" aria-label="Junior H"></button>
+        </div>
+
+        <div class="carousel-inner rounded-4">
+
+            <div class="carousel-item active">
+                <img src="jenny.webp" class="d-block w-100 imagen-carrusel"
+                     alt="Jenni Rivera">
+                <div class="carousel-caption">
+                    <h3 class="fw-bold">Jenni Rivera</h3>
+                    <p>La música regional mexicana que me encanta.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="carla.webp" class="d-block w-100 imagen-carrusel"
+                     alt="Carla Morrison">
+                <div class="carousel-caption">
+                    <h3 class="fw-bold">Carla Morrison</h3>
+                    <p>Canciones románticas llenas de sentimientos.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="junior.jpg" class="d-block w-100 imagen-carrusel"
+                     alt="Junior H">
+                <div class="carousel-caption">
+                    <h3 class="fw-bold">Junior H</h3>
+                    <p>Sonidos que forman parte de mi playlist.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+                data-bs-target="#carouselPlaylist" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselPlaylist" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <div class="text-center mt-4">
+        <a href="canciones.html" class="btn btn-outline-playlist">
+            Ver mis canciones favoritas 🎶
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p class="mb-0">© 2026 Samantha Villa García | Mi Playlist Favorita</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

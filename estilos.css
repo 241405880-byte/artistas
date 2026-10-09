@@ -1,0 +1,259 @@
+/* ESTILOS GENERALES */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f8f0fb;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main,
+header {
+    flex-shrink: 0;
+}
+/* BARRA DE NAVEGACIÓN */
+.navbar-playlist {
+    background: linear-gradient(90deg, #6c3483, #a569bd);
+    padding: 15px 0;
+}
+.navbar-playlist .navbar-brand {
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+.navbar-playlist .nav-link {
+    color: white;
+    margin-left: 10px;
+    border-radius: 20px;
+    padding: 8px 14px;
+    transition: 0.3s;
+}
+.navbar-playlist .nav-link:hover,
+.navbar-playlist .nav-link.active {
+    background: #ffffff30;
+    color: #ffe3ff;
+}
+/* INICIO */
+.hero {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #ead5f5, #f8f0fb, #e8c9f3);
+}
+.hero h1 {
+    color: #6c3483;
+}
+.hero h1 span {
+    color: #b05acb;
+}
+.hero p {
+    max-width: 650px;
+    margin: 15px auto;
+    line-height: 1.7;
+}
+.etiqueta {
+    background: #ead5f5;
+    color: #6c3483;
+    padding: 8px 12px;
+}
+.btn-playlist {
+    background: #8e44ad;
+    color: white;
+    border: 2px solid #8e44ad;
+    border-radius: 25px;
+    padding: 10px 22px;
+    transition: 0.3s;
+}
+.btn-playlist:hover {
+    background: #6c3483;
+    border-color: #6c3483;
+    color: white;
+    transform: translateY(-2px);
+}
+.btn-outline-playlist {
+    color: #8e44ad;
+    border: 2px solid #8e44ad;
+    border-radius: 25px;
+    padding: 10px 22px;
+    transition: 0.3s;
+}
+.btn-outline-playlist:hover {
+    background: #8e44ad;
+    color: white;
+}
+/* SECCIONES Y TÍTULOS */
+.seccion {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+.subtitulo {
+    color: #a569bd;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+.titulo-pagina {
+    color: #6c3483;
+    margin-bottom: 15px;
+}
+/* CARRUSEL DE BOOTSTRAP */
+#carouselPlaylist {
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.imagen-carrusel {
+    height: 450px;
+    object-fit: cover;
+    background: #6c3483;
+}
+#carouselPlaylist .carousel-caption {
+    background: rgba(60, 20, 75, 0.75);
+    border-radius: 15px;
+    padding: 15px;
+    bottom: 35px;
+}
+#carouselPlaylist .carousel-caption h3 {
+    font-size: 28px;
+}
+#carouselPlaylist .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+/* TARJETAS DE ARTISTAS */
+.tarjeta-artista {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.tarjeta-artista:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px #8e44ad35 !important;
+}
+.tarjeta-artista .card-img-top {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+.tarjeta-artista .card-body {
+    padding: 25px 20px;
+}
+.tarjeta-artista .card-title {
+    color: #6c3483;
+    margin-top: 8px;
+}
+.tarjeta-artista .card-text {
+    line-height: 1.7;
+}
+/* TARJETAS DE CANCIONES */
+.tarjeta-cancion {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.tarjeta-cancion:hover {
+    transform: translateY(-6px);
+}
+.tarjeta-cancion .card-body {
+    padding: 25px;
+}
+.tarjeta-cancion h2 {
+    color: #6c3483;
+}
+.numero-cancion {
+    background: linear-gradient(135deg, #8e44ad, #c39bd3);
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    padding: 25px;
+    text-align: center;
+}
+.tarjeta-cancion .card-body > p {
+    line-height: 1.6;
+}
+/* CONTACTO */
+.contacto-seccion {
+    flex: 1;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    display: flex;
+    align-items: center;
+}
+.tarjeta-contacto {
+    border-radius: 22px;
+    overflow: hidden;
+}
+.icono-contacto {
+    width: 85px;
+    height: 85px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ead5f5;
+    border-radius: 50%;
+    font-size: 38px;
+}
+.dato-contacto {
+    background: #f8f0fb;
+    border: 1px solid #ead5f5;
+}
+.dato-contacto h2 {
+    color: #6c3483;
+}
+.texto-correo {
+    overflow-wrap: anywhere;
+}
+/* PIE DE PÁGINA */
+footer {
+    background: #6c3483;
+    color: white;
+    text-align: center;
+    padding: 20px 12px;
+    margin-top: auto;
+}
+/* DISEÑO PARA CELULARES */
+@media (max-width: 600px) {
+    .hero {
+        padding: 55px 15px;
+    }
+    .hero h1 {
+        font-size: 38px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    .seccion {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .imagen-carrusel {
+        height: 300px;
+    }
+    #carouselPlaylist .carousel-caption {
+        padding: 8px;
+        bottom: 20px;
+    }
+    #carouselPlaylist .carousel-caption h3 {
+        font-size: 20px;
+    }
+    #carouselPlaylist .carousel-caption p {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    .tarjeta-artista .card-img-top {
+        height: 230px;
+    }
+    .contacto-seccion {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .texto-correo {
+        font-size: 14px;
+    }
+}
